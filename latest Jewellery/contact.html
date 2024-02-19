@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - Jewelry Haven</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-family: Arial;
+        background: #f1f1f1;
+    }
+    
+    header {
+        background-color: #333;
+        color: rgb(201, 26, 26);
+        padding: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation-name: hd;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+    }
+    
+    @keyframes hd {
+        0% {
+            background-color: #aaa;
+        }
+        50% {
+            background-color: rgb(221, 255, 0);
+            color: black;
+            letter-spacing: 10px;
+        }
+        75% {
+            background-color: rgb(192, 23, 77);
+            color: rgba(26, 25, 25, 0.952);
+        }
+        100% {
+            background-color: rgba(28, 194, 239, 0.811);
+            color: white;
+        }
+    }
+    
+    nav {
+        background-color: white;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    a {
+        color: rgb(14, 4, 63);
+        text-decoration: none;
+        margin-inline: 20px;
+        color: rgb(14, 4, 64);
+        font-weight: 600;
+        transition: 0.6s;
+        padding: 12px;
+        background-color: rgba(184, 179, 179, 0.372);
+        border-radius: 5px;
+    }
+    
+    a:hover {
+        background-color: #675b5b;
+        color: white;
+    }
+    
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Latest-Jewellery Designs</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sevices.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <!-- <script>
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Basic form validation
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            // Additional validation for email format
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address");
+                return;
+            }
+
+            // You can perform additional actions here, such as sending the form data to a server
+
+            // For this example, we'll just log the form data to the console
+            console.log("Name: " + name);
+            console.log("Email: " + email);
+            console.log("Message: " + message);
+
+            // Optionally, you can reset the form after submission
+            document.getElementById("contactForm").reset();
+        }
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - Jewelry Haven</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-family: Arial;
+        background: #f1f1f1;
+    }
+    
+    header {
+        background-color: #333;
+        color: rgb(201, 26, 26);
+        padding: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation-name: hd;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+    }
+    
+    @keyframes hd {
+        0% {
+            background-color: #aaa;
+        }
+        50% {
+            background-color: rgb(221, 255, 0);
+            color: black;
+            letter-spacing: 10px;
+        }
+        75% {
+            background-color: rgb(192, 23, 77);
+            color: rgba(26, 25, 25, 0.952);
+        }
+        100% {
+            background-color: rgba(28, 194, 239, 0.811);
+            color: white;
+        }
+    }
+    
+    nav {
+        background-color: white;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    a {
+        color: rgb(14, 4, 63);
+        text-decoration: none;
+        margin-inline: 20px;
+        color: rgb(14, 4, 64);
+        font-weight: 600;
+        transition: 0.6s;
+        padding: 12px;
+        background-color: rgba(184, 179, 179, 0.372);
+        border-radius: 5px;
+    }
+    
+    a:hover {
+        background-color: #675b5b;
+        color: white;
+    }
+    
+    .about-section {
+        display: flex;
+        color: black;
+        margin: 2rem;
+        padding: 10px 20px;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    img {
+        margin: 20px 30px;
+        border-radius: 10%;
+        width: 400px;
+        border: 2px solid rgb(188, 232, 14);
+    }
+    
+    .About {
+        padding: 100px 70px;
+        margin-right: 20px;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        color: black;
+        text-align: center;
+        margin-right: 20px;
+    }
+    
+    .About.content {
+        display: none;
+        margin-top: 0px;
+    }
+    
+    label:hover {
+        cursor: pointer;
+    }
+    
+    .About input[type="checkbox"] {
+        display: none;
+    }
+    
+    .About input[type="checkbox"]:checked~.content {
+        display: block;
+    }
+    
+    .About input[type="checkbox"]:not(:checked)~.content {
+        display: none;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Latest-Jewellery Designs</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sevices.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+    </header>
+
+    <section class="about-section">
+        <div class="About">
+            <input type="checkbox" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Jewelry Haven, your ultimate destination for the latest and most stunning jewelry designs. Our passion is to bring you a unique collection of jewelry that combines craftsmanship, style, and innovation.</p>
+            <div class="content">
+                <p>At Jewelry Haven, we pride ourselves on staying ahead of the trends and offering you the most contemporary and fashionable pieces. Our team of skilled designers and artisans work tirelessly to create jewelry that reflects your individuality
+                    and enhances your style.</p>
+
+                <br>
+
+                <p>Product Variety: Jewelry stores often carry a diverse selection of products to cater to different tastes and preferences. This may include a range of styles, designs, and materials to suit various occasions and customer preferences. Explore
+                    our collection and experience the elegance and sophistication that Jewelry Haven has to offer.</p>
+            </div>
+
+            <label for="about">Read more</label>
+        </div>
+        <div class="img"> <img src="https://www.shutterstock.com/image-photo/florence-italy-september-16-2015-260nw-373002112.jpg " alt="Latest Jewelry Designs ">
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Jewelry Haven. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
